@@ -1,0 +1,220 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8PqcgUr13j0n-K-Qo2Goc9JbEtl1ruIMg9g&s");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Calibri';
+    font-style:italic;
+    color:white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#csi_logo,#sies_logo{
+    height:60px;
+    width:auto;
+}
+
+#csi_logo {
+    margin-left:10vw;
+    padding:0;
+}
+#sies_logo {
+    margin-right:10vw;
+    padding:0;
+}
+
+#heading,#details {
+    width:100vw;
+    height:100vh;
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.heading{
+    margin:auto;
+    color:white;
+}
+.heading > div > p {
+    margin:0;
+}
+.heading h3{
+    font-size:2em;
+    margin: 0;
+}
+.heading h1{
+    font-family:'Segoe UI Black';
+    font-size: 4rem;
+    margin:10px;
+}
+.heading p{
+    font-size:25px;
+}
+.heading h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:25px;
+    margin:0;
+    font-weight:bolder;
+}
+.heading .schedule {
+    margin:25px;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    border-radius:10px;
+    width:200px;
+    height:50px;
+    background-color: crimson;
+    cursor: pointer;
+}
+.register p{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    font-weight:bold;
+}
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height:50px;
+    border-radius:10px;
+    background-color: darkslategray;
+    margin:20 auto;
+    font-weight: bold;
+}
+#welcome,#about {
+    margin:50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#welcome h1, #welcome h2, #about h1{
+    font-family:'Segoe UI Black'; 
+     margin: 0;
+}
+
+#welcome h1,#about h1{
+    font-size: 3rem;
+}
+
+#welcome h2{
+    font-size:2em;
+}
+
+#welcome ul, #about ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Small screens (phones) */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #csi_logo, #sies_logo {
+        margin: 10px 0;
+        height: 50px;
+    }
+
+    #heading {
+        height: auto;
+        padding: 20px;
+    }
+
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .heading h3,
+    .heading h2,
+    .heading p {
+        font-size: 18px;
+    }
+
+    .register {
+        width: 150px;
+        height: 40px;
+    }
+
+    .text-box {
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #welcome h1,
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #welcome h2 {
+        font-size: 1.5rem;
+    }
+
+    #welcome ul,
+    #about ul {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .heading h1 {
+        font-size: 3rem;
+    }
+
+    .heading h3,
+    .heading h2,
+    .heading p {
+        font-size: 20px;
+    }
+
+    .register {
+        width: 180px;
+        height: 45px;
+    }
+
+    .text-box {
+        width: 280px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    #welcome h1,
+    #about h1 {
+        font-size: 2.5rem;
+    }
+
+    #welcome h2 {
+        font-size: 1.75rem;
+    }
+
+    #welcome ul,
+    #about ul {
+        font-size: 20px;
+        padding: 0 30px;
+    }
+}
