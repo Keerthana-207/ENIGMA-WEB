@@ -126,6 +126,22 @@ header {
     font-size: 22px;
 }
 
+.frame {
+    background-color: rgba(0,0,20,0.75);
+    width:60%;
+    height:auto;
+    margin:auto;
+    border-radius:10px;
+    padding:10px;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+}
+
+.frame hr{
+    width:80%
+}
+
 /* Small screens (phones) */
 @media screen and (max-width: 600px) {
     header {
@@ -216,5 +232,26 @@ header {
     #about ul {
         font-size: 20px;
         padding: 0 30px;
+    }
+}
+/* Small screens (phones) */
+@media screen and (max-width: 600px) {
+    .frame {
+        width: 90%;       /* Use most of the screen width */
+        height: auto;     /* Let height adjust based on content */
+        padding: 15px;    /* Slightly more padding for readability */
+        margin: 20px auto; /* Space around the frame */
+        font-size: 16px;  /* Slightly smaller font for small screens */
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .frame {
+        width: 70%;       /* Adjust width to fit tablet screens */
+        height: auto;     /* Height adjusts based on content */
+        padding: 15px;    /* Comfortable padding */
+        margin: 30px auto; /* Center with margin */
+        font-size: 18px;  /* Moderate font size */
     }
 }
